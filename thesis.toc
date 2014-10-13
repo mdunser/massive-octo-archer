@@ -1,0 +1,8 @@
+\changetocdepth {2}
+\select@language {american}
+\contentsline {chapter}{Contents}{iii}{section*.1}
+\contentsline {chapter}{\chapternumberline {1}Introduction}{1}{chapter.1}
+\contentsline {section}{\numberline {1.1}Features}{1}{section.1.1}
+\contentsline {subsection}{\numberline {1.1.1}Extra package includes}{1}{subsection.1.1.1}
+\contentsline {subsection}{\numberline {1.1.2}Layout setup}{2}{subsection.1.1.2}
+\contentsline {appendix}{\chapternumberline {A}Dummy Appendix}{3}{appendix.A}
