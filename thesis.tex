@@ -178,6 +178,14 @@ The acknowledgements and the people to thank go here, don't forget to include yo
 \addtocontents{toc}{\vspace{2em}} % Add a gap in the Contents, for aesthetics
 
 %----------------------------------------------------------------------------------------
+%   Table of contents
+%----------------------------------------------------------------------------------------
+\pagestyle{fancy}
+
+\lhead{\emph{Contents}} % Set the left side page header to "Contents"
+\tableofcontents % Write out the Table of Contents
+
+%----------------------------------------------------------------------------------------
 %   THESIS CONTENT - CHAPTERS
 %----------------------------------------------------------------------------------------
 
@@ -189,6 +197,7 @@ The acknowledgements and the people to thank go here, don't forget to include yo
 % Uncomment the lines as you write the chapters
 
 \input{chapters/01_introduction.tex}
+\input{chapters/02_theory.tex}
 
 %----------------------------------------------------------------------------------------
 %   THESIS CONTENT - APPENDICES
@@ -212,9 +221,6 @@ The acknowledgements and the people to thank go here, don't forget to include yo
 %----------------------------------------------------------------------------------------
 
 \pagestyle{fancy} % The page style headers have been "empty" all this time, now use the "fancy" headers as defined before to bring them back
-
-\lhead{\emph{Contents}} % Set the left side page header to "Contents"
-\tableofcontents % Write out the Table of Contents
 
 \lhead{\emph{List of Figures}} % Set the left side page header to "List of Figures"
 \listoffigures % Write out the List of Figures
