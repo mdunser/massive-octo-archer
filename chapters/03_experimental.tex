@@ -11,7 +11,7 @@ short description of the main components of the CMS experiment.
 The LHC \cite{lhc_designreport} is currently by far the largest and most powerful particle accelerator in
 the world. It is a circular accelerator situated in a tunnel around 100 metres below the Swiss-French
 border west of Geneva. Its main purpose is accelerating protons to energies of up to 13 TeV
-\footnote{One electronvolt (TeV) is the energy acquired by a charge of 1$e$ passing through an electron field of 1 volt, equivalent to \num{1.602e-19} Joule.} 
+\footnote{One electronvolt (eV) is the energy acquired by a charge of 1$e$ passing through an electric field of 1 volt, equivalent to \num{1.602e-19} Joule.} 
 in the final development stage of the machine starting in 2015. 
 Besides the acceleration of protons it is also capable of accelerating heavy ions (predominantly lead ions) to energies of up to 
 2.76 TeV per nucleon.
@@ -23,11 +23,11 @@ achieved by a long chain of linear and circular accelerators, a sketch of which 
 Fig.~\ref{fig:accelerators}. 
 
 \begin{figure}[h!]
-    \label{fig:accelerators}
-    \caption{Conceptual drawing of all accelerators and experiments hosted at CERN. Besides operating
-    the LHC, there are many other accelerators, decelerators and experiments being operated.}
     \centering
     \includegraphics[width=0.65\textwidth]{../figs/Cern-Accelerator-Complex.jpg}
+    \caption{Conceptual drawing of all accelerators and experiments hosted at CERN. Besides operating
+    the LHC, there are many other accelerators, decelerators and experiments being operated.}
+    \label{fig:accelerators}
 \end{figure}
 
 Protons used for acceleration in the LHC are extracted from a hydrogen molecules in a bottle situated 
@@ -47,5 +47,70 @@ to collide protons and anti-protons at energies high enough to produce $W$ and $
 Ions pass through the same accelerators on their way to the LHC, the only difference being the
 first linear accelerator, which in the case of heavy ions is Linac 3.
 
-While the LHC is filled and delivering collisions to its experiments, the accelerators are used to provide high
-energy particles to other experiments ongoing at CERN. The 
+While the LHC is filled and delivering collisions to its experiments, the accelerators are used to provide
+particles to other experiments ongoing at CERN. The Antiproton Decelerator (AD) in which anti-protons are 
+decelerated and combined with positrons to form anti-hydrogen, and the ISOLDE collaboration for the study
+of many different radioactive ions are just some of the examples of interesting experiments ongoing at CERN.
+
+\subsection{Specifications of the LHC}
+\label{sub:lhc}
+The LHC itself is located in a tunnel 50-150 meters below ground and has a total circumference of \num{26659} meters.
+Particles are injected from the SPS into the LHC into two counter-rotating beams at the aforementioned
+injection energy of 450 GeV. 
+
+In order to measure the performance of a particle accelerator such as the LHC, the quantities of instantaneous and integrated
+luminosity are the most important figure of merit, as they correspond to the total number of particle collisions
+produced in any given collision point. The instantaneous luminosity is defined as
+
+\begin{equation}
+    L = \frac{N_b^2 n_b f_{rev} \gamma_r}{4 \pi \epsilon_n \beta^*} F,
+\end{equation}
+where $N_b$ denotes the number of particles per bunch, $n_b$ the number of bunches, $f_{rev}$ the revolution 
+frequency of each bunch, $\gamma_r$ the relativistic gamma factor, $\epsilon_n$ the normalized beam emittance,
+$\beta^*$ the $\beta$-function of the beam at the collision point, and $F$ a geometrical factor inversely proportional
+to the crossing angle at the interaction point. The beam emittance is defined as the 
+volume of the beam in the position-momentum phase space and is thus a measure of the quality of the beam. Emittance itself is 
+inversely proportional to the beam momentum and it is therefore necessary to introduce a normalized emittance, which does not change
+its value with momentum in order to compare beam quality before and after acceleration. The $\beta$-function describes the
+behavior of the transverse beam size as a function of the position in the accelerator, and the value $\beta^*$ is consequently
+proportional to the transverse size of the beam at the collision point.
+
+The dimension of the instantaneous luminosity is $cm^{-2}s^{-1}$ and by integrating the instantaneous luminosity over time
+the integrated luminosity $\mathfrak{L}_{int}$ can be obtained. Through knowledge of the latter, one can calculate the total number
+of expected events for any given physical process in a data sample of a given size by
+\begin{equation}
+    N_{\text{process}} = \mathfrak{L}_{int} \cdot \sigma_{\text{process}}.
+\end{equation}
+
+All relevant beam parameters to calculate the instantaneous luminosity at the LHC are summarized in Table~\ref{tab:lhc}
+at both injection and collision energies. It is important to note that these values refer to the design of the LHC and
+would result in an instantaneous luminosity of \num{1e34} $cm^{-2}s^{-1}$ at a spacing between the bunches
+of 25 ns. However, the actual performance of the machine between first stable operations in 2009 and the first long 
+shutdown at the beginning of 2013 has been outstanding. Despite the fact that only half the bunches were filled, resulting in 
+a bunch spacing of 50 ns, many beam parameters have already exceeded their design values which lead to a maximum 
+instantaneous luminosity of \num{7.67e33} $cm^{-2}s^{-1}$. 
+
+
+
+
+\begin{table}
+    \begin{center}
+    \caption{Beam parameters for beams in the LHC at injection and collision energy.}
+    \label{tab:lhc}
+    \begin{tabular}{ r l | c | c }
+   & & Injection & Collision \\ \hline \hline
+    \multicolumn{4}{c}{\textbf{Beam parameters}} \\ \hline
+    Beam Energy & [GeV]   &  450   & 3500 - 7000 \\ \hline
+    Relativistic $\gamma_r$ &  &  479.6   & xxxx-7461 \\ \hline
+    Particles per bunch & & \multicolumn{2}{c|}{\num{1.15e11}} \\ \hline
+    No. of bunches  & &  \multicolumn{2}{c|}{2808} \\ \hline
+    $f_{rev}$& [Hz]   & & 11245 \\ \hline
+    $\epsilon_n$  & [$\mu$m rad] & 3.5 & 3.75 \\ \hline
+    Half crossing angle\footnote{\label{note1}at CMS and ATLAS} &[$\mu$rad] & $\pm$ 160 & $\pm$ 142.5 \\ \hline
+    $\beta^*$& [m] & 18 & 0.55 \\ \hline %\footnotemark[\ref{note1}]
+%    Beam energy per beam [MJ] & 23.3 & 362 \\ \hline
+%    Synchrotron radiation per ring [W]& \num{6.15e-2} & \num{3.6e3} \\ \hline
+    \hline
+    \end{tabular}
+    \end{center}
+\end{table}
