@@ -122,10 +122,10 @@ behavior of the transverse beam size as a function of the position in the accele
 proportional to the transverse size of the beam at the collision point.
 
 The dimension of the instantaneous luminosity is $cm^{-2}s^{-1}$ and by integrating it over time
-the integrated luminosity $\mathfrak{L}_{int}$ is obtained. Through knowledge of the latter, one can calculate the total number
+the integrated luminosity $\mathcal{L}_{int}$ is obtained. Through knowledge of the latter, one can calculate the total number
 of expected events for any given physical process in a data sample of a given size by
 \begin{equation}
-    N_{\text{process}} = \mathfrak{L}_{int} \cdot \sigma_{\text{process}}.
+    N_{\text{process}} = \mathcal{L}_{int} \cdot \sigma_{\text{process}}.
 \end{equation}
 
 All relevant beam parameters to calculate the instantaneous luminosity at the LHC are summarized in Table~\ref{tab:lhc}
@@ -188,15 +188,51 @@ Data collected for this thesis were recorded by the CMS experiment.
 \subsection{General structure and the magnet}
 \label{sub:cms_general}
 The Compact Muon Solenoid (CMS) experiment is located roughly 100 meters below ground in Cessy, France,
-it is cylindrically shaped with dimensions of roughly 22 meters in length and a diameter of about 16 meters. It comprises
-a barrel part in the center and a so-called endcap on either side to seal the detector as hermetically as possible.
+it is cylindrically shaped with dimensions of roughly 22 meters in length and a diameter of about 16 meters. 
+The whole apparatus comprises a barrel part in the center and a so-called endcap on either side to seal the detector as hermetically as possible.
+A drawing of the CMS detector is shown in Fig.~\ref{fig:cms_scheme}. 
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.65\textwidth]{../figs/cms_scheme.pdf}
+    \caption{Perspective view of the CMS detector. The cylindrical shape as well as the barrel and endcap
+geometry can be clearly seen. The depicted people are to scale~\cite{cmsdetector}.}
+    \label{fig:cms_scheme}
+\end{figure}
+
+The convention for the coordinate system is as follows. The origin of the coordinate system is at the nominal
+interaction point. The x-axis points towards the center of the LHC ring, the y-axis points towards the surface
+and the z-axis points towards the west, along beam 2. The azimuthal angle $\phi$ is measured in the x-y plane, while the
+polar angle $\theta$ is measured from the positive z-direction. It is commonly replaced by a quantity called 
+pseudo-rapidity defined as $\eta = - \log \left[ \tan \left(\frac{\theta}{2} \right) \right]$.
+
+
+
 As the presence of the word `solenoid' in the acronym for CMS already suggests, its main feature is a very large, solenoid
 magnet which defines the overall structure of the experiment. Much like the LHC bending magnets, it is a superconducting
-structure and the conducting material is a niobium-titanium alloy, albeit at a very different scale. It measures roughly 6 
-meters in diameter and 11 (FIXME) meters in length, carrying a current of about FIXME ampere.
+structure and the conducting material is a niobium-titanium alloy, albeit at a very different scale. It measures roughly six
+meters in inner diameter and 13 meters in length, carrying a current of about \num{18000} (FIXME) ampere, resulting in a
+maximum magnetic field strength of 3.8 T~\cite{magnettdr}. In addition to the actual magnet, the CMS magnet system
+also comprises a return yoke for the magnetic field lines to be homogeneous as a function of the distance from the interaction
+point. Altogether, the magnet system weighs approximately \num{11000} metric tons, by far the heaviest component of the 
+CMS detector. As momentum resolution of charged particles is a critical factor in the physics performance of a detector, the magnetic
+field strength within the tracking volume is desired to be as large as possible. 
 
-\subsection{The subdetectors}
+The large volume of the CMS magnet allows for most sub-detectors to be situated within a very high magnetic field. Not only the
+tracking detectors, but also the calorimetry for energy measurement are fully incorporated within the magnet's volume.
+
+
+
+\subsection{The sub-detectors}
 \label{sub:cms_subdet}
+The structure of CMS is a layered, onion-like assembly of different sub-detectors. In the very center, the boron beam-pipe
+passes through the detector with a diameter of 2.5 cm FIXME!!. Moving radially outwards from the center of the beam-pipe,
+the layers are first the silicon pixel detector followed by the silicon strip tracker, the electromagnetic calorimeter,
+the hadronic calorimeter, the superconducting magnet and finally the magnet return yoke interleaved with the muon chambers.
+
+\subsubsection*{The CMS pixel detector}
+The CMS pixel detector comprises 
+
 \subsection{The trigger system}
 \label{sub:cms_trigger}
 \subsection{Reconstruction and data formats}
