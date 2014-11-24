@@ -44,8 +44,8 @@ The SPS is the world's second largest accelerator with a circumference of nearly
 to collide protons and anti-protons at energies high enough to produce $W$ and $Z$ bosons, leading to their discovery in 1983
 \cite{Wdiscovery, Zdiscovery}.
 
-Ions pass through the same accelerators on their way to the LHC, the only difference being the
-first linear accelerator, which in the case of heavy ions is Linac 3.
+Ions pass through the same accelerators on their way to the LHC with the notable exception of the very first 
+acceleration being done in Linac 3 rather than Linac 2.
 
 While the LHC is filled and delivering collisions to its experiments, the accelerators are used to provide
 particles to other experiments ongoing at CERN. The Antiproton Decelerator (AD) in which anti-protons are 
@@ -54,10 +54,54 @@ of many different radioactive ions are just some of the examples of interesting 
 
 \subsection{Specifications of the LHC}
 \label{sub:lhc}
-The LHC itself is located in a tunnel 50-150 meters below ground and has a total circumference of \num{26659} meters.
-Particles are injected from the SPS into the LHC into two counter-rotating beams at the aforementioned
-injection energy of 450 GeV. 
+The LHC itself is located in a tunnel roughly 50-150 meters below ground in the Geneva
+area, extending from Lake Geneva all the way to the Jura mountain chain. Its total circumference is \num{26659} meters
+which makes it -- together with its predecessor the Large Electron Positron Collider hosted in the same tunnel -- by 
+far the largest particle accelerator ever built. It is divided into 8 sectors, separated and named by the eight access
+points to the tunnel. A schematic drawing of the LHC with all its access points can be found in Fig.~\ref{fig:lhc_scheme}.
+Access points 1, 2, 5, and 8 host the four main experiments ATLAS, ALICE, CMS, and LHCb, the acceleration is performed
+by radio-frequency (RF) cavities at point 4, the beam-dump system is located at point 6 and beam monitoring
+and conditioning is performed at points 3 and 7~\cite{cmsdetector}.
 
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.65\textwidth]{../figs/lhc_scheme.pdf}
+    \caption{Schematic drawing of the LHC ring and its sectors and access points numbered in clockwise direction
+    starting at the ATLAS experiment in point 1.}
+    \label{fig:lhc_scheme}
+\end{figure}
+
+
+\subsubsection*{The magnet system}
+Particles are injected from the SPS into the LHC into two counter-rotating beams in discrete bunches
+at the aforementioned 450 GeV. In order to control the particles on their circular path, an intricate magnet 
+system was designed in order to bend and to focus the beams. The main feature of the LHC magnet system are
+the 1232 dipole bending magnets, each roughly 15 meters in length and weighing 30 tonnes. These magnets
+are made of a niobium-titanium alloy, a type-2 superconductor which allows current transport without loss
+at the operating temperature of 1.9 K. Cooling of the LHC cold mass of roughly 37 Mt is achieved with pressurized superfluid helium. 
+Each magnet hosts two separate beam-pipes for beam 1 (clockwise) and beam
+2 (counter-clockwise) with the dipole magnetic field pointing in opposite direction in either of them. In order to achieve
+acceptable beam lifetimes and to minimize beam-gas interactions, the beam pipes are evacuated and the residual gas
+pressure is around \num{e-10} mbar.
+Upon injection from the SPS the dipole magnets are operated at a magnetic field strength of 0.535 T which is slowly
+raised during the acceleration period of the beam to a final field strength of 8.33 T at the maximum collision
+energy.
+
+Alongside the dipole magnets for the bending of the particles, there are thousands of additional magnets for correcting
+and controlling the particle's path. The largest part of the correction magnets are sextupole magnets situated
+on either side of every dipole magnet. Further components include a decapole and an octupole corrector for
+each dipole magnet as well as injection kicker magnets and kicker magnets for the beam dump system among others.
+
+\subsubsection*{The RF cavities}
+Once the LHC is filled and circulation of the beams is stable, they are accelerated from their initial energy
+by the means of so-called RF cavities which provide a high frequency alternating electric field of nominally
+400.8 MHz. Similar to the bending magnets, the RF cavities are operated in a superconducting state at a temperature
+of 1.9 K.
+There are a total of eight such cavities per beam, each achieving a potential difference of 2 MV for a combined 16 MV 
+necessary for acceleration at collision energy. During the acceleration period of the beams, the energy gain
+per particle per turn is 485 keV with the total power consumption of the RF system being around 275 kW. 
+
+\subsubsection*{Beam parameters}
 In order to measure the performance of a particle accelerator such as the LHC, the quantities of instantaneous and integrated
 luminosity are the most important figure of merit, as they correspond to the total number of particle collisions
 produced in any given collision point. The instantaneous luminosity is defined as
@@ -65,52 +109,97 @@ produced in any given collision point. The instantaneous luminosity is defined a
 \begin{equation}
     L = \frac{N_b^2 n_b f_{rev} \gamma_r}{4 \pi \epsilon_n \beta^*} F,
 \end{equation}
-where $N_b$ denotes the number of particles per bunch, $n_b$ the number of bunches, $f_{rev}$ the revolution 
+where $N_b$ denotes the number of particles per bunch, $n_b$ the number of bunches per beam, $f_{rev}$ the revolution 
 frequency of each bunch, $\gamma_r$ the relativistic gamma factor, $\epsilon_n$ the normalized beam emittance,
 $\beta^*$ the $\beta$-function of the beam at the collision point, and $F$ a geometrical factor inversely proportional
-to the crossing angle at the interaction point. The beam emittance is defined as the 
+to the crossing angle of the two beams at the interaction point. 
+
+The beam emittance is defined as the 
 volume of the beam in the position-momentum phase space and is thus a measure of the quality of the beam. Emittance itself is 
 inversely proportional to the beam momentum and it is therefore necessary to introduce a normalized emittance, which does not change
 its value with momentum in order to compare beam quality before and after acceleration. The $\beta$-function describes the
 behavior of the transverse beam size as a function of the position in the accelerator, and the value $\beta^*$ is consequently
 proportional to the transverse size of the beam at the collision point.
 
-The dimension of the instantaneous luminosity is $cm^{-2}s^{-1}$ and by integrating the instantaneous luminosity over time
-the integrated luminosity $\mathfrak{L}_{int}$ can be obtained. Through knowledge of the latter, one can calculate the total number
+The dimension of the instantaneous luminosity is $cm^{-2}s^{-1}$ and by integrating it over time
+the integrated luminosity $\mathfrak{L}_{int}$ is obtained. Through knowledge of the latter, one can calculate the total number
 of expected events for any given physical process in a data sample of a given size by
 \begin{equation}
     N_{\text{process}} = \mathfrak{L}_{int} \cdot \sigma_{\text{process}}.
 \end{equation}
 
 All relevant beam parameters to calculate the instantaneous luminosity at the LHC are summarized in Table~\ref{tab:lhc}
-at both injection and collision energies. It is important to note that these values refer to the design of the LHC and
-would result in an instantaneous luminosity of \num{1e34} $cm^{-2}s^{-1}$ at a spacing between the bunches
-of 25 ns. However, the actual performance of the machine between first stable operations in 2009 and the first long 
-shutdown at the beginning of 2013 has been outstanding. Despite the fact that only half the bunches were filled, resulting in 
-a bunch spacing of 50 ns, many beam parameters have already exceeded their design values which lead to a maximum 
-instantaneous luminosity of \num{7.67e33} $cm^{-2}s^{-1}$. 
-
-
-
+at both injection and collision energies. 
 
 \begin{table}
     \begin{center}
     \caption{Beam parameters for beams in the LHC at injection and collision energy.}
     \label{tab:lhc}
     \begin{tabular}{ r l | c | c }
-   & & Injection & Collision \\ \hline \hline
-    \multicolumn{4}{c}{\textbf{Beam parameters}} \\ \hline
-    Beam Energy & [GeV]   &  450   & 3500 - 7000 \\ \hline
-    Relativistic $\gamma_r$ &  &  479.6   & xxxx-7461 \\ \hline
-    Particles per bunch & & \multicolumn{2}{c|}{\num{1.15e11}} \\ \hline
-    No. of bunches  & &  \multicolumn{2}{c|}{2808} \\ \hline
-    $f_{rev}$& [Hz]   & & 11245 \\ \hline
-    $\epsilon_n$  & [$\mu$m rad] & 3.5 & 3.75 \\ \hline
-    Half crossing angle\footnote{\label{note1}at CMS and ATLAS} &[$\mu$rad] & $\pm$ 160 & $\pm$ 142.5 \\ \hline
-    $\beta^*$& [m] & 18 & 0.55 \\ \hline %\footnotemark[\ref{note1}]
+    \multicolumn{4}{c}{\textbf{Beam parameters}} \\                                                                                            \hline
+                                                                & Unit         & Injection                                    & Collision \\   \hline \hline
+    Beam Energy                                                 & [GeV]        & 450                                          & 3500 - 7000 \\ \hline
+    Relativistic $\gamma_r$                                     &              & 479.6                                        & 3730-7461  \\  \hline
+    Particles per bunch                                         &              & \multicolumn{2}{c}{\num{1.15e11}} \\                          \hline
+    No. of bunches                                              &              & \multicolumn{2}{c}{2808} \\                                   \hline
+    $f_{rev}$                                                   & [Hz]         &                                              & 11245 \\       \hline
+    $\epsilon_n$                                                & [$\mu$m rad] & 3.5                                          & 3.75 \\        \hline
+    Half crossing angle\footnote{\label{note1}at CMS and ATLAS} & [$\mu$rad]   & $\pm$ 160                                    & $\pm$ 142.5 \\ \hline
+    $\beta^*$                                                   & [m]          & 18                                           & 0.55 \\        \hline %\footnotemark[\ref{note1}]
 %    Beam energy per beam [MJ] & 23.3 & 362 \\ \hline
 %    Synchrotron radiation per ring [W]& \num{6.15e-2} & \num{3.6e3} \\ \hline
     \hline
     \end{tabular}
     \end{center}
 \end{table}
+
+\subsubsection*{Performance of the LHC}
+All values in Table~\ref{tab:lhc} refer to the design values of the LHC, while the actual performance since startup in
+2008 has been considerably different. After the initial startup in the autumn of 2008 when beams were first injected 
+into the machine, a faulty connector between superconductors caused a significant explosion in the cooling system of the main magnets, resulting
+in a shutdown and repair period until late 2009. However, upon restarting of the machine in 2009, operations of
+the LHC have been almost flawless, with many parameters of the LHC reaching or even exceeding their design targets.
+Since the limiting factor for the LHC energy is the attainable magnetic field strength in the bending magnet, combined with 
+safety concerns regarding the replaced connectors from the incident in 2008, a staged approach for a slow energy ramp-up
+was implemented for the LHC. First stable collisions for data-taking in 2010 were performed at an energy per proton
+of 3.5 TeV resulting in 7 TeV center-of-mass energy. This energy was maintained also during 2011 before being increased
+to 8 TeV in center-of-mass energy during the 2012 data-taking period. This thesis focuses on the dataset at 8 TeV.
+The energy will further be increased to 13 TeV in center-of-mass in early 2015.
+
+Regarding the luminosity, the LHC has outperformed its early expectations. Despite the fact that so far only
+half the bunches were filled, resulting in a bunch spacing of 50 ns instead of the design 25 ns, the maximum
+instantaneous luminosity has almost reached its design value of \num{1e34} $cm^{-2}s^{-1}$ in late 2012, when 
+an LHC fill with an instantaneous luminosity of \num{7.67e33} $cm^{-2}s^{-1}$ was recorded. This was mostly
+due to the increase in protons per bunch.
+
+
+\section{The CMS experiment}
+\label{sec:cms}
+As briefly mentioned before, the LHC provides high energy particle collisions to four large particle physics experiments, namely
+the ALICE, ATLAS, CMS, and LHCb experiments. While the ALICE and LHCb experiments are specially designed for specific purposes,
+the study of heavy ion collisions and the study of processes involving the b-quark, respectively, the ATLAS and CMS experiments
+are design as `general purpose' experiments. As such, their goal is the detailed scrutiny of the SM, the search for the recently observed
+Higgs boson [FIXME - reference], and the search for new physics phenomena. They do this by means of measuring and absorbing decay products
+of the collisions. The relevant physical observables of any particle produced in a particle collisions are the momentum vector
+and the energy of a particle. Once these two quantities are known, every particle can be identified unambiguously. 
+
+Data collected for this thesis were recorded by the CMS experiment.
+
+\subsection{General structure and the magnet}
+\label{sub:cms_general}
+The Compact Muon Solenoid (CMS) experiment is located roughly 100 meters below ground in Cessy, France,
+it is cylindrically shaped with dimensions of roughly 22 meters in length and a diameter of about 16 meters. It comprises
+a barrel part in the center and a so-called endcap on either side to seal the detector as hermetically as possible.
+As the presence of the word `solenoid' in the acronym for CMS already suggests, its main feature is a very large, solenoid
+magnet which defines the overall structure of the experiment. Much like the LHC bending magnets, it is a superconducting
+structure and the conducting material is a niobium-titanium alloy, albeit at a very different scale. It measures roughly 6 
+meters in diameter and 11 (FIXME) meters in length, carrying a current of about FIXME ampere.
+
+\subsection{The subdetectors}
+\label{sub:cms_subdet}
+\subsection{The trigger system}
+\label{sub:cms_trigger}
+\subsection{Reconstruction and data formats}
+\label{sub:cms_reco}
+\subsection{Monte-Carlo simulation}
+\label{sub:cms_mc}
