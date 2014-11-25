@@ -225,16 +225,49 @@ tracking detectors, but also the calorimetry for energy measurement are fully in
 
 \subsection{The sub-detectors}
 \label{sub:cms_subdet}
-The structure of CMS is a layered, onion-like assembly of different sub-detectors. In the very center, the boron beam-pipe
+The structure of CMS is a layered, onion-like assembly of different sub-detectors. In the very center, the beryllium beam-pipe
 passes through the detector with a diameter of 2.5 cm FIXME!!. Moving radially outwards from the center of the beam-pipe,
 the layers are first the silicon pixel detector followed by the silicon strip tracker, the electromagnetic calorimeter,
 the hadronic calorimeter, the superconducting magnet and finally the magnet return yoke interleaved with the muon chambers.
 
 \subsubsection*{The CMS pixel detector}
-The CMS pixel detector is a layered silicon detector with a pixel size of 100 $\times$ 150 $\mu m^2$. Is is divided into
-a barrel (BPIS) and two endcap `forward 'parts (FPIX) symmetrically arranged around the nominal interaction point. The BPIX comprises three
+The CMS pixel detector is a layered silicon detector with a pixel size of 100 $\times$ 150 $\mu m^2$ with the purpose of measuring the
+trajectory of charged particles very precisely. It is divided into
+a barrel (BPIX) and two endcap `forward' parts (FPIX) symmetrically arranged around the nominal interaction point. The BPIX comprises three
 concentrical layers of 53 cm in length and at radii of \num{4.3}, \num{7.2}, and \num{11} cm from the interaction point, while there are two FPIX 
 disks on either side of the BPIX, at distances of z=$\pm$\num{34.5} and z=$\pm$\num{46.5} cm, extending from a radius of \num{6} to 15 cm.
+In combination, the barrel and endcap part provide high granularity tracking up to a pseudo-rapidity of $\eta$ = 2.5, corresponding to a 
+polar angle of roughly \ang{10}.
+A sketch of both the pixel detector and the silicon strip can be found in Fig.~\ref{fig:tracker}.
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.85\textwidth]{../figs/tracker.png}
+    \caption{Sketch of a quarter of all parts in the CMS tracking system with distances in radius $r$ and $z$. The pixel detector is close to the
+interaction point shown in yellow, the silicon strip tracker is underlaid in pink. Each pink and blue solid line represents an active
+detector layer~\cite{cmstrackeralignment}.}
+    \label{fig:tracker}
+\end{figure}
+
+Both the FPIX and the BPIX are organized into single detector modules. There are 768 modules in the barrel part and 672 modules in the four
+forward disks, each consisting of 2 to 16 readout chips (ROCs)~\cite{bpix}. Every ROC has a size of roughly 8$\times$8 \si{\square\milli\meter} and is bump-bonded
+to an active silicon layer of 285 \si{\micro\meter} in thickness, divided into 52$\times$80 single pixels. In total, there are  1440 modules containing
+about \num{16000} ROCs with a gross pixel count of about 66 million and a total silicon area of about one square meter. 
+Such a high granularity is needed in order to obtain good spacial resolution
+at the interaction point, good reconstruction of the tracks and in order to keep the occupancy low in high luminosity running of the LHC. At design
+luminosity of \num{1e34} \si{\per\square\meter\per\second}, the CMS pixel detector is hit by about \num{1000} particles per bunch crossing, leading
+to an occupancy of less than one percent.
+Even with relatively low occupancies, the total flux of particles in the inner layers of the pixel detector are sufficiently high to induce
+significant radiation damage. For this reason, the pixel detector has to be replaced during run 2 of the LHC, an event scheduled for late 2017.
+
+\subsubsection*{The silicon strip tracker}
+Just outside the pixel detector, further away from the interaction point lies the silicon strip tracker. Its purpose is much the same as the
+pixel detector, albeit with a much larger covered area and a much smaller number of active channels. It occupies the radial distances from
+20 to 116 cm and is also divided into a cylindrical barrel part and endcap parts perpendicular to the beam direction. The naming scheme of the 
+different parts is the Tracker Inner Barrel (TIB) and the Tracker Outer Barrel (TOB) for the layers parallel to the beam direction and the
+Tracker Inner Disks (TID) and the Tracker EndCaps (TEC) for the perpendicular part. Altogether, a particle traversing the strip tracker will
+hit about ten active silicon layers\footnote{This depends on the exact trajectory.}, resulting in outstanding impact parameter resolution of 
+around 10 \si{\micro\meter}.
 
 \subsection{The trigger system}
 \label{sub:cms_trigger}
