@@ -263,11 +263,28 @@ significant radiation damage. For this reason, the pixel detector has to be repl
 \subsubsection*{The silicon strip tracker}
 Just outside the pixel detector, further away from the interaction point lies the silicon strip tracker. Its purpose is much the same as the
 pixel detector, albeit with a much larger covered area and a much smaller number of active channels. It occupies the radial distances from
-20 to 116 cm and is also divided into a cylindrical barrel part and endcap parts perpendicular to the beam direction. The naming scheme of the 
+20 to 116 cm and a length in z-direction of \si{5.8 \meter}. It is also divided into a cylindrical barrel part and endcap parts perpendicular to the beam direction. The naming scheme of the 
 different parts is the Tracker Inner Barrel (TIB) and the Tracker Outer Barrel (TOB) for the layers parallel to the beam direction and the
-Tracker Inner Disks (TID) and the Tracker EndCaps (TEC) for the perpendicular part. Altogether, a particle traversing the strip tracker will
-hit about ten active silicon layers\footnote{This depends on the exact trajectory.}, resulting in outstanding impact parameter resolution of 
-around 10 \si{\micro\meter}.
+Tracker Inner Disks (TID) and the Tracker EndCaps (TEC) for the perpendicular part. In total, there are \num{15148} single detector modules
+in the silicon strip trackeri\cite{siliconstrip} with varying sizes of strip widths and inter-strip pitch lengths. The inter strip pitch varies
+from \si{80 \micro\meter} at low radius to \si{200 \micro\meter} at higher radius, while the ratio between pitch and width is constant at \num{0.25}.
+The combined surface of the 9.3 million single channels is around \si{198 \square\meter}, making it the largest silicon tracker ever built.
+The thickness of the silicon also varies between \si{320 \micro\meter} in the inner part of the detector and \si{500 \micro\meter} on the outside part. With this specifications,
+the total occupancy at design luminosity is approximately 1\%. Altogether, a particle traversing the strip tracker will
+hit about ten active silicon layers\footnote{This depends on the exact trajectory and varies between eight and 14 layers.}.
+
+Due to the high granularity,
+the multi-layered design, and the very high and homogeneous magnetic field in the tracking volume, the performance of the CMS tracking system
+is impressive. Single point resolutions are around \si{30 \micro\meter} and in combination, the impact parameter resolution of is around 
+around 10 \si{\micro\meter} for high energy muons, while the momentum resolution varies from around 1\% for low-\pt muons in the central
+region to about 8\% for high-\pt muons in the forward region.
+
+\subsubsection*{The electromagnetic calorimeter}
+CMS has adapted a design with two separate calorimeters for electromagnetically and hadronically interacting particles. Both of those
+calorimeters are contained within the superconducting magnet. The electromagnetic calorimeter is made of \num{68524} single 
+scintillating crystals made out of lead tungstate (PbWO$_3$). This material was chosen for its speed, small radiation length of 
+0.89 \si{\centi\meter}, small Moli\`{e}re radius and radiation hardness.
+
 
 \subsection{The trigger system}
 \label{sub:cms_trigger}
