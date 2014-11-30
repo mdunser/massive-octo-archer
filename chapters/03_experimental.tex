@@ -266,7 +266,7 @@ pixel detector, albeit with a much larger covered area and a much smaller number
 20 to 116 cm and a length in z-direction of \si{5.8 \meter}. It is also divided into a cylindrical barrel part and endcap parts perpendicular to the beam direction. The naming scheme of the 
 different parts is the Tracker Inner Barrel (TIB) and the Tracker Outer Barrel (TOB) for the layers parallel to the beam direction and the
 Tracker Inner Disks (TID) and the Tracker EndCaps (TEC) for the perpendicular part. In total, there are \num{15148} single detector modules
-in the silicon strip trackeri\cite{siliconstrip} with varying sizes of strip widths and inter-strip pitch lengths. The inter strip pitch varies
+in the silicon strip tracker\cite{siliconstrip} with varying sizes of strip widths and inter-strip pitch lengths. The inter strip pitch varies
 from \si{80 \micro\meter} at low radius to \si{200 \micro\meter} at higher radius, while the ratio between pitch and width is constant at \num{0.25}.
 The combined surface of the 9.3 million single channels is around \si{198 \square\meter}, making it the largest silicon tracker ever built.
 The thickness of the silicon also varies between \si{320 \micro\meter} in the inner part of the detector and \si{500 \micro\meter} on the outside part. With this specifications,
@@ -281,30 +281,49 @@ region to about 8\% for high-\pt muons in the forward region.
 
 \subsubsection*{The electromagnetic calorimeter}
 CMS has adapted a design with two separate calorimeters for electromagnetically and hadronically interacting particles. Both of those
-calorimeters are contained within the superconducting magnet, as shown in a sketch of the CMS calorimetry in Fig.~\ref{fig:calo}. 
-
-The electromagnetic calorimeter (ECAL) is a homogeneous calorimeter made of \num{68524} lead tungstate (PbWO$_3$) crystals. This material was chosen
-for its mechanical and scintillating properties. With a density of 8.28 \si{\kilo\gram\per\cubic\meter} it has a very short radiation length of
-0.89 \si{\centi\meter} as well as a small Moli\`{e}re radius of about 2.2 \si{\centi\meter}\footnote{The radiation length is the distance at which 
-the energy of an incoming particle has decreased to $\frac{1}{e}\simeq$38\%, while the Moli\`{e}re radius denotes the transverse containment of an 
-electromagnetic shower.}, allowing for a high granularity and adequate spacial resolution of electromagnetic showers. Its scintillating properties
-include a very short signal collection time of about 25 \si{\nano\second} for 80\% of the signal and a relatively low photoelectron output of
-4.5 per \mev in a wavelength spectrum with a broad maximum in the blue-green 420-430 \si{\nano\meter} region. This light is collected
-and amplified by photomultipliers which are mounted to the rear end of the crystals.
-Each crystal has an area of 22$\times$22 \si{\square\milli\meter} on the front facing side and 26$\times$26 
-\si{\square\milli\meter} on the far side, corresponding to a spacial resolution of 0.0174$\times$0.0174 in  $\eta$-$\phi$. The length 
-in radial direction is 230 \si{\milli\meter}, corresponding to \num{25.8} radiation lengths. The barrel part of the ECAL extends to 
-|$\eta$| = 1.479, and the endcap part covers the pseudorapidity range from 1.479 < |$\eta$| < 3.0.
-
-The design of the ECAL was driven by the necessary resolution to discover the Higgs boson decay into two photons.
+calorimeters are contained within the superconducting magnet, as shown in a sketch of the CMS calorimetry in Fig.~\ref{fig:cms_calo}. 
 
 \begin{figure}[h!]
     \centering
     \includegraphics[width=0.85\textwidth]{../figs/cms_calo.png}
     \caption{Design of the CMS calorimetry system. The homogeneous electromagnetic calorimeter is shown in red towards
-the center of the detecteo, while the hadronic calorimeter extends to larger radii~\cite{cmsdetector}.}
+the center of the detector, while the hadronic calorimeter extends to larger radii~\cite{cmsdetector}.}
     \label{fig:cms_calo}
 \end{figure}
+
+The electromagnetic calorimeter (ECAL) is a homogeneous calorimeter made of \num{68524} lead tungstate (PbWO$_3$) crystals built to absorb and measure 
+electromagnetically interacting particles such as photons and electrons. The material was chosen
+for its mechanical and scintillating properties. With a density of 8.28 \si{\kilo\gram\per\cubic\meter} it has a very short radiation length of
+0.89 \si{\centi\meter} as well as a small Moli\`{e}re radius of about 2.2 \si{\centi\meter}\footnote{The radiation length is the distance at which 
+the energy of an incoming particle has decreased to $\frac{1}{e}\simeq$38\%, while the Moli\`{e}re radius defines the transverse containment of an 
+electromagnetic shower.}, allowing for a high granularity and adequate spacial resolution of electromagnetic showers. Its scintillating properties
+include a very short signal collection time of about 25 \si{\nano\second} for 80\% of the signal and a relatively low photo-electron output of
+4.5 per \mev in a wavelength spectrum with a broad maximum in the blue-green 420-430 \si{\nano\meter} region. This light is collected
+and amplified by photo-multipliers which are mounted to the rear end of the crystals.
+Each crystal has an area of 22$\times$22 \si{\square\milli\meter} on the front facing side and 26$\times$26 
+\si{\square\milli\meter} on the far side, corresponding to a spacial resolution of 0.0174$\times$0.0174 in  $\eta$-$\phi$. The length 
+in radial direction is 230 \si{\milli\meter}, corresponding to \num{25.8} radiation lengths. The barrel part of the ECAL (EB) extends to 
+$|\eta|$ = 1.479, and the endcap part (EE) covers the pseudorapidity range from 1.479 $<$ $|\eta|$ $<$ 3.0.
+
+From measurements in testbeams, the energy resolution of the CMS ECAL can be parametrized by
+\begin{equation}
+    \left( \frac{\sigma}{E} \right) =   \left( \frac{\text{2.8\%}}{\sqrt{E}} \right)   \bigoplus  \left( \frac{\text{12\%}}{E} \right)  \bigoplus  \text{0.30\%} ,
+\end{equation}
+where the first term on the right hand side refers to the stochastic term, the second one denotes a noise term and the last is a constant term~\cite{ecalresolution}. The energy
+is in \gev. For the most relevant physical processes, such as $H\rightarrow\gamma\gamma$ or $Z\rightarrow e^+e^-$, the total resolution
+both for electrons and photons is of the order of 1\% in the central part and of the order of a few percent in the
+forward part of the detector.
+
+\subsubsection*{The hadronic calorimeter}
+For an accurate measurement of the missing transverse energy or momentum, a precise knowledge of the energy of hadronic jets is of 
+paramount importance. However, since the available volume within the CMS magnet is limited, a compromise on the hadronic calorimeter
+had to be made. The implemented design is a sampling calorimeter, interleaved layers of a massive passive absorber material and a lighter,
+but active scintillating material. The task of the passive absorber is to create particle showers, which can then be measured in the active
+material. 
+
+The geometry is again divided into a barrel (HB) and an endcap (HE) part. The HB consists of one steel plate in the very front of the detector
+and another one at the very end of the detector. In between, the absorber material is brass of variable thickness. In total, the barrel consists
+of 5.82 interaction lengths of material at $\eta$ = 0 up to 10.6 interaction lengths at $|\eta|$ = 1.3. 
 
 \subsection{The trigger system}
 \label{sub:cms_trigger}
