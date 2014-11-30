@@ -281,10 +281,30 @@ region to about 8\% for high-\pt muons in the forward region.
 
 \subsubsection*{The electromagnetic calorimeter}
 CMS has adapted a design with two separate calorimeters for electromagnetically and hadronically interacting particles. Both of those
-calorimeters are contained within the superconducting magnet. The electromagnetic calorimeter is made of \num{68524} single 
-scintillating crystals made out of lead tungstate (PbWO$_3$). This material was chosen for its speed, small radiation length of 
-0.89 \si{\centi\meter}, small Moli\`{e}re radius and radiation hardness.
+calorimeters are contained within the superconducting magnet, as shown in a sketch of the CMS calorimetry in Fig.~\ref{fig:calo}. 
 
+The electromagnetic calorimeter (ECAL) is a homogeneous calorimeter made of \num{68524} lead tungstate (PbWO$_3$) crystals. This material was chosen
+for its mechanical and scintillating properties. With a density of 8.28 \si{\kilo\gram\per\cubic\meter} it has a very short radiation length of
+0.89 \si{\centi\meter} as well as a small Moli\`{e}re radius of about 2.2 \si{\centi\meter}\footnote{The radiation length is the distance at which 
+the energy of an incoming particle has decreased to $\frac{1}{e}\simeq$38\%, while the Moli\`{e}re radius denotes the transverse containment of an 
+electromagnetic shower.}, allowing for a high granularity and adequate spacial resolution of electromagnetic showers. Its scintillating properties
+include a very short signal collection time of about 25 \si{\nano\second} for 80\% of the signal and a relatively low photoelectron output of
+4.5 per \mev in a wavelength spectrum with a broad maximum in the blue-green 420-430 \si{\nano\meter} region. This light is collected
+and amplified by photomultipliers which are mounted to the rear end of the crystals.
+Each crystal has an area of 22$\times$22 \si{\square\milli\meter} on the front facing side and 26$\times$26 
+\si{\square\milli\meter} on the far side, corresponding to a spacial resolution of 0.0174$\times$0.0174 in  $\eta$-$\phi$. The length 
+in radial direction is 230 \si{\milli\meter}, corresponding to \num{25.8} radiation lengths. The barrel part of the ECAL extends to 
+|$\eta$| = 1.479, and the endcap part covers the pseudorapidity range from 1.479 < |$\eta$| < 3.0.
+
+The design of the ECAL was driven by the necessary resolution to discover the Higgs boson decay into two photons.
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.85\textwidth]{../figs/cms_calo.png}
+    \caption{Design of the CMS calorimetry system. The homogeneous electromagnetic calorimeter is shown in red towards
+the center of the detecteo, while the hadronic calorimeter extends to larger radii~\cite{cmsdetector}.}
+    \label{fig:cms_calo}
+\end{figure}
 
 \subsection{The trigger system}
 \label{sub:cms_trigger}
