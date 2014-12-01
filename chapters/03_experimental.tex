@@ -372,16 +372,28 @@ situated in the endcap part. RPCs are attached to both types of detectors for tr
 
 The DTs are organized in four concentrical cylinders in the barrel part with a total of 250 drift chambers containing \num{172000} active wires.
 They are made of multiple so-called superlayers, which are essentially stacked tubes either in beam direction or perpendicular to it. Two or three
-of those superlayers are then combined into one DT, with altering orientation of the wires to provide maximum spacial resolution. RPCs are glued to either side of a DT. The gas in the 
+of those superlayers are then combined into one DT, with altering orientation of the wires to provide maximum spacial resolution. RPCs are glued to the DTs, on both sides for the
+inner two cylinders and on the inner side for the outer two. The gas in the 
 drift tubes is a mixture of 85\% Ar and 15\% CO$_2$ and the drift length is chosen to be 21 \si{\milli\meter} with a drift time of roughly 380 \si{\nano\second},
 allowing for negligible occupancy.
 
-Because of the much higher flux in the forward part of the detector, a more robust detector design had to be chosen for high values of $|\eta|$
+Because of the much higher flux and an inhomogeneous magnetic field in the forward part of the detector, a different detector design had to be chosen for high values of $|\eta|$.
+The CSCs are a set of 468 trapezoidal modules, each covering from \ang{10} to \ang{20} in $\phi$. Each CSC consists of six gas-filled gaps with cathode strips running radially
+and anode wires running almost perpendicular to the strips. The $r$, $\phi$, and $z$ coordinates of a traversing muon is thus measured six times per CSC, and there
+are in total four layers of CSCs in each endcap. There are a total of \num{220000} readout channels of the strips and another \num{180000} readout channels of the wires,
+allowing for good spacial resolution and low occupancy even at high flux rates of up to 1 \si{\kilo\hertz\per\square\centi\meter} at full LHC luminosity. The gas mixture
+is 40\% Ar, 50\% CO$_2$, and 10\% CF$_4$, where the CO$_2$ component achieves a high signal gain, while the CF$_4$ component protects the wires from polymerisation. Three
+layers of RPCs are connected to the CSCs in the outer part of the endcap.
 
+RPCs are gas-filled detectors which have a very fast signal rise-time, comparable to that of scintillators. Since the time resolution is much better
+than the LHC bunch spacing of 25 \si{\nano\second}, the RPCs provide not only an accurate estimate of the momentum of a muon, but also unambiguous
+assignment to a bunch crossing. Each RPC is made up of two 2 \si{\milli\meter} wide, gas-filled gaps with strips on the common side and plates of plastic on the outer sides. These 
+simple circuits are operated in avalanche mode in order to ensure good operation at high rates.
 
-
-
-Using only the muon system, a resolution of 
+Using the three muon-subsystems and combining their measurement, a standalone muon momentum resolution of below 10\% can be achieved for muons up to 200 GeV. This value increases
+to between 15\% and 40\% for muons of 1 TeV momentum, depending on the position in $|\eta|$. Since a muon can be identified also in the tracker volume, 
+combining the tracks from the inner part of the detector with the information of the muon chambers improves this resolution to roughly a percent for momenta below 200~GeV and
+about 5\% for momenta of 1 TeV.
 
 \subsection{The trigger system}
 \label{sub:cms_trigger}
