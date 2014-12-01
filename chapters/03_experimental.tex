@@ -142,7 +142,7 @@ at both injection and collision energies.
     Relativistic $\gamma_r$                                     &              & 479.6                                        & 3730-7461  \\  \hline
     Particles per bunch                                         &              & \multicolumn{2}{c}{\num{1.15e11}} \\                          \hline
     No. of bunches                                              &              & \multicolumn{2}{c}{2808} \\                                   \hline
-    $f_{rev}$                                                   & [Hz]         &                                              & 11245 \\       \hline
+    $f_{rev}$                                                   & [Hz]         & \multicolumn{2}{c}{11245}                            \\       \hline
     $\epsilon_n$                                                & [$\mu$m rad] & 3.5                                          & 3.75 \\        \hline
     Half crossing angle\footnote{\label{note1}at CMS and ATLAS} & [$\mu$rad]   & $\pm$ 160                                    & $\pm$ 142.5 \\ \hline
     $\beta^*$                                                   & [m]          & 18                                           & 0.55 \\        \hline %\footnotemark[\ref{note1}]
@@ -194,7 +194,7 @@ A drawing of the CMS detector is shown in Fig.~\ref{fig:cms_scheme}.
 
 \begin{figure}[h!]
     \centering
-    \includegraphics[width=0.65\textwidth]{../figs/cms_scheme.pdf}
+    \includegraphics[width=0.85\textwidth]{../figs/cms_scheme.pdf}
     \caption{Perspective view of the CMS detector. The cylindrical shape as well as the barrel and endcap
 geometry can be clearly seen. The depicted people are to scale~\cite{cmsdetector}.}
     \label{fig:cms_scheme}
@@ -316,18 +316,28 @@ forward part of the detector.
 
 \subsubsection*{The hadronic calorimeter}
 For an accurate measurement of the missing transverse energy or momentum, a precise knowledge of the energy of hadronic jets is of 
-paramount importance. However, since the available volume within the CMS magnet is limited, a compromise on the hadronic calorimeter
+paramount importance. However, since the available volume within the CMS magnet is limited, a compromise on the hadronic calorimeter (HCAL)
 had to be made. The implemented design is a sampling calorimeter, interleaved layers of a massive passive absorber material and a lighter,
 but active scintillating material. The task of the passive absorber is to create particle showers, which can then be measured in the active
 material. 
 
-The geometry is again divided into a barrel (HB) and an endcap (HE) part. The HB consists of one steel plate in the very front of the detector
-and another one at the very end of the detector. In between, the absorber material is brass of variable thickness. In total, the barrel consists
-of 5.82 interaction lengths of material at $\eta$ = 0 up to 10.6 interaction lengths at $|\eta|$ = 1.3. 
+The geometry is again divided into a barrel (HB) and an endcap (HE) part. The HB consists of two steel plates as first and last absorber layer and
+14 layers of brass of variable thickness in between. In total, these 16 layers of absorber material in the barrel amount to 5.82 interaction lengths
+\footnote{An interaction length corresponds to the length XXXXX} of material at $\eta$ = 0 up to 10.6 interaction lengths at $|\eta|$ = 1.3. The HE
+is composed of 18 brass absorber plates constituting about 10 interaction lengths along the coverage up to $|\eta|$ = 3.0.
+Every absorber plate is combined with a layer of plastic scintillator organized in tiles each occupying an area of 0.087$\times$0.087, which drives 
+the spacial resolution of the hadronic calorimeter. In addition to the components contained within the superconducting magnet, the hadronic calorimeter
+features another layer of detector material just outside the magnet, called the hadronic outer (HO) in order to measure hadronic jets with an energy
+sufficient to traverse the HB and the magnet (so-called punch-throughs). There is also a hadronic calorimeter for high-$\eta$ jets, called the hadronic forward (HF) covering 
+pseudo-rapidities of 3.0 $<$ $|\eta|$ $<$ 5.0.
+
+Since the HCAL is a sampling, rather than a homogeneous, calorimeter involving large parts of inactive material, its energy resolution is significantly
+worse than the one of the ECAL. The fact that hadronic interactions are in general accompanied by larger losses, it 
+
 
 \subsection{The trigger system}
 \label{sub:cms_trigger}
 \subsection{Reconstruction and data formats}
 \label{sub:cms_reco}
-\subsection{Monte-Carlo simulation}
+\subsection{Simulation and Monte-Carlo}
 \label{sub:cms_mc}
