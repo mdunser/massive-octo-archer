@@ -305,12 +305,20 @@ Each crystal has an area of 22$\times$22 \si{\square\milli\meter} on the front f
 in radial direction is 230 \si{\milli\meter}, corresponding to \num{25.8} radiation lengths. The barrel part of the ECAL (EB) extends to 
 $|\eta|$ = 1.479, and the endcap part (EE) covers the pseudorapidity range from 1.479 $<$ $|\eta|$ $<$ 3.0.
 
-From measurements in testbeams, the energy resolution of the CMS ECAL can be parametrized by
+The energy resolution of a calorimeter can be parametrized by
 \begin{equation}
-    \left( \frac{\sigma}{E} \right) =   \left( \frac{\text{2.8\%}}{\sqrt{E}} \right)   \bigoplus  \left( \frac{\text{12\%}}{E} \right)  \bigoplus  \text{0.30\%} ,
+\label{eq:calo_res}
+    \left( \frac{\sigma}{E} \right) =   \left( \frac{\text{a}}{\sqrt{E}} \right)   \bigoplus  \left( \frac{\text{b}}{E} \right)  \bigoplus  \text{c} ,
 \end{equation}
-where the first term on the right hand side refers to the stochastic term, the second one denotes a noise term and the last is a constant term~\cite{ecalresolution}. The energy
-is in \gev. For the most relevant physical processes, such as $H\rightarrow\gamma\gamma$ or $Z\rightarrow e^+e^-$, the total resolution
+where $a$ is called the stochastic term, $b$ the noise term, and $c$ a constant term. At low particle energies both the stochastic term and the 
+noise term dominate the resolution, while at higher energies the importance of the constant term becomes more important.
+From measurements in testbeams, the terms for the energy resolution of the CMS ECAL were found to be
+\begin{eqnarray*}
+    a &= 2.8 \%, \\
+    b &= 12.0 \%, \\
+    c &= 0.3, \% 
+\end{eqnarray*}
+~\cite{ecalresolution} for the energy in \gev. For the most relevant physical processes, such as $H\rightarrow\gamma\gamma$ or $Z\rightarrow e^+e^-$, the total resolution
 both for electrons and photons is of the order of 1\% in the central part and of the order of a few percent in the
 forward part of the detector.
 
@@ -332,7 +340,8 @@ sufficient to traverse the HB and the magnet (so-called punch-throughs). There i
 pseudo-rapidities of 3.0 $<$ $|\eta|$ $<$ 5.0.
 
 Since the HCAL is a sampling, rather than a homogeneous, calorimeter involving large parts of inactive material, its energy resolution is significantly
-worse than the one of the ECAL. The fact that hadronic interactions are in general accompanied by larger losses, it 
+worse than the one of the ECAL. Adding to this lower precision is the fact that hadronic interactions are accompanied by some unmeasurable energy 
+losses in nuclear excitations. Using the same parametrization as in Eq.~\ref{eq:calo_res}, the parameters for the HCAL are found to be
 
 
 \subsection{The trigger system}
