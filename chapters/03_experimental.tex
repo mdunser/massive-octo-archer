@@ -172,6 +172,15 @@ instantaneous luminosity has almost reached its design value of \num{1e34} $cm^{
 an LHC fill with an instantaneous luminosity of \num{7.67e33} $cm^{-2}s^{-1}$ was recorded. This was mostly
 due to the increase in protons per bunch.
 
+\subsubsection*{Pileup}
+In order to reach the luminosities discussed in the previous section, it is necessary for the LHC to produce more than
+one proton-proton collision per bunch crossing in the experiments. This effect is called pileup and poses great difficulty
+to the experiments in handling multiple interaction vertices. Some problems include the identification of the `interesting' 
+vertex, the assignment of electrically neutral particles to said vertex, energy corrections for detector objects such as jets, leptons,
+and the missing momentum due to pileup interactions, and occupancy in the subdetectors.
+The number of proton-proton interactions per bunch crossing follow a Poisson-distribution of which the mean was about FIXME in 2010,
+and about FIXME in 2012, with the values of 2011 lying in between.
+
 
 \section{The CMS experiment}
 \label{sec:cms}
@@ -397,6 +406,37 @@ about 5\% for momenta of 1 TeV.
 
 \subsection{The trigger system}
 \label{sub:cms_trigger}
+With a bunch crossing frequency of \SI{40}{\mega\hertz} and a mean number of collisions per bunch crossing of roughly 20, there are up to 800 million collisions taking
+place inside CMS every second. Considering that the whole of CMS has roughly 100 million readout channels, this would lead to unsustainable data-rates, even for the most 
+powerful readout and network possible to date. For this reason, a triggering system has been implemented in order to differentiate `interesting' collisions from those
+who are considered not. CMS has adopted a two-stage approach, with a first, hardware-based and thus very fast triggering mechanism called the Level-1 trigger (L1), followed
+by a second, fully software based trigger named the High-Level-Trigger (HLT). 
+
+\subsubsection*{The L1 trigger}
+Dealing with complicated data at a rate of \SI{40}{\mega\hertz} requires for processing of information at speeds that are unattainable for software reconstruction. 
+Therefore, a fully hardware based system has been implemented, relying heavily on the use of integrated circuits in the form of so-called Field-Programmable-Gate-Arrays (FPGAs).
+Because speed is such an important point of the triggering decision, not all information from the detector can be used in order to make a yes/no decision on an event-by-event
+basis. In the current L1 trigger system, only coarsely segmented information from the calorimeters and the muon system are used for the trigger decision, 
+while the full data from the muon system, the calorimeter, and the silicon tracker are stored in buffers until a trigger accept (L1 accept) triggers the full readout of these buffers.
+An organizational sketch of the different participants for a trigger decision is shown in Fig.~\ref{fig:l1}
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.65\textwidth]{../figs/l1_organi.png}
+    \caption{Organizational chart of the various components of any L1-accept. The two systems (calorimetry and muons) work in parallel 
+until they are combined at a regional/global level into the global trigger decision~\cite{cmsdetector}.}
+    \label{fig:l1}
+\end{figure}
+The calorimeter part of the trigger has inputs from the ECAL, HCAL, and the HF, constructing first so-called Trigger Primitives from coarsely organized trigger `towers'. These are
+then fed into a regional trigger, where energy sums and crude identifications of physical objects are performed. This information is then given to the global trigger, which constructs
+relevant variables such as the total energy deposited, the number of jets, etc.
+In parallel, the muon system tries to identify tracks of muons and calculate their \pt by taking information from all three sub-systems and combining it into the Global
+Muon trigger. This output is then combined with the calorimeter trigger into a final trigger decision, the aforementioned L1-accept.
+
+
+The input rate to the L1 is the bunch crossing frequency of the LHC, while the output rate, i.e. the rate of L1-accepts, is limited to \SI{100}{\kilo\hertz}. At this rate, the
+L1-accept is passed to all the subdetectors, triggering full readout of the event information stored in buffers. This set of complete data is then passed on to the HLT.
+
+\subsubsection*{The HLT}
 
 
 
