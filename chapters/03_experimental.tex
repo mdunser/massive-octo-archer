@@ -441,17 +441,26 @@ L1-accept is passed to all the subdetectors, triggering full readout of the even
 
 \subsubsection*{The HLT}
 At the L1 output rate, the full information from the detector is sent from the experimental cavern at P5 to a computer farm situated above ground for further processing.
-This computer farm is made of a large number of commercial CPUs, running reconstruction software which is implemented into the whole CMS reconstruction software, package 
-described below in section~\ref{sub:cms_reco}, albeit with different sets of parameters optimized for speed~\cite{hltcms}. The HLT starts with L1 information on the candidates for
+This computer farm is made of a large number of commercial CPUs (in total about \num{13000}) cores, running reconstruction software which is implemented into the whole 
+CMS reconstruction software, package 
+described below in section~\ref{sub:cms_reco}, albeit with different sets of parameters optimized for speed~\cite{hltcms, hltcms2}. The HLT starts with L1 information on the candidates for
 physical objects, and improves the reconstruction. The organization is done in so-called HLT paths, which are essentially requirements on physical objects being present in
 a collision. An example which will be used later on in the analysis part of this thesis is \texttt{HLT\_Mu17\_Mu8\_v1}, which requires the presence of one muon with \pt
 greater than 17 \gev and another muon with \pt greater than 8 \gev on HLT level. Other `online' physical objects in the HLT include electrons, jets, missing transverse
-energy, and \ht -- the scalar sum of all jet $p_T$s above a threshold. The reconstruction of objects is divided into modules for any given quantity, followed by a filter on 
-the quantity where a cut is applied, in order to save precious computation time.
+energy, and \HT -- the scalar sum of all jet-$p_T$s above a threshold. The reconstruction of objects is divided into modules for any given quantity, followed by a filter on 
+the quantity where a cut is applied, in order to save precious computation time of unnecessary quantities. The largest fraction of computation time is taken up by the tracking, and
+the total time required for an event depends on the exact event kinematics, up to a limit of \SI{200}{\milli\second}.
 
+The total data reduction factor of the HLT system is roughly \num{10e2}, so the final output rate of events actually fully reconstructed and saved on hard-drives is of the order
+of \SI{1}{\kilo\hertz}. About half of this data is reconstructed in the immediate time period after the collision, whereas the other half of the data is first stored and 
+reconstructed only later, when computing resources for reconstruction are freed. This process is called data-parking and was implemented for the first time in 2012.
 
+To facilitate analysis of the data when it is fully reconstructed after passing the HLT, different HLT paths are organized in various so-called primary datasets (PDs), which group similar
+events into one collection. Examples for primary datasets are DoubleMu, DoubleElectron, and MuEG.
 
 \subsection{Reconstruction and data formats}
 \label{sub:cms_reco}
+
+
 \subsection{Simulation and Monte-Carlo}
 \label{sub:cms_mc}
