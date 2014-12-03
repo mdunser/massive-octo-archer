@@ -175,11 +175,13 @@ due to the increase in protons per bunch.
 \subsubsection*{Pileup}
 In order to reach the luminosities discussed in the previous section, it is necessary for the LHC to produce more than
 one proton-proton collision per bunch crossing in the experiments. This effect is called pileup and poses great difficulty
-to the experiments in handling multiple interaction vertices. Some problems include the identification of the `interesting' 
+to the experiments in handling the many interaction vertices. Since the total inelastic cross-section in the LHC is dominated by
+rather unexciting, low-mass and low-energy very forward QCD interactions, it is very unlikely to observe more than one `interesting' 
+proton-proton collision per bunch crossing. Nevertheless, some problems for the experiments associated with pileup include the identification of the `interesting' 
 vertex, the assignment of electrically neutral particles to said vertex, energy corrections for detector objects such as jets, leptons,
-and the missing momentum due to pileup interactions, and occupancy in the subdetectors.
-The number of proton-proton interactions per bunch crossing follow a Poisson-distribution of which the mean was about FIXME in 2010,
-and about FIXME in 2012, with the values of 2011 lying in between.
+and the missing momentum due to pileup interactions, and occupancy in the subdetectors. 
+
+The number of proton-proton interactions per bunch crossing follow a Poisson-distribution of which the mean reached about 20 in 2012~\cite{pileupCMS}.
 
 
 \section{The CMS experiment}
@@ -328,7 +330,7 @@ From measurements in testbeams, the terms for the energy resolution of the CMS E
     b &= 12.0 \%, \\
     c &= 0.3 \% ,
 \end{align*}
-~\cite{ecalresolution} for the energy in \gev. For the most relevant physical processes, such as $H\rightarrow\gamma\gamma$ or $Z\rightarrow e^+e^-$, the total resolution
+for the energy in \gev~\cite{ecalresolution}. For the most relevant physical processes, such as $H\rightarrow\gamma\gamma$ or $Z\rightarrow e^+e^-$, the total resolution
 both for electrons and photons is of the order of 1\% in the central part and of the order of a few percent in the
 forward part of the detector.
 
@@ -433,10 +435,19 @@ In parallel, the muon system tries to identify tracks of muons and calculate the
 Muon trigger. This output is then combined with the calorimeter trigger into a final trigger decision, the aforementioned L1-accept.
 
 
-The input rate to the L1 is the bunch crossing frequency of the LHC, while the output rate, i.e. the rate of L1-accepts, is limited to \SI{100}{\kilo\hertz}. At this rate, the
+The input rate to the L1 is the bunch crossing frequency of the LHC and the maximum processing time of the L1 logic is \SI{3.2}{\micro\second}. The output rate, 
+i.e. the rate of L1-accepts, is limited to \SI{100}{\kilo\hertz}. At this rate, the
 L1-accept is passed to all the subdetectors, triggering full readout of the event information stored in buffers. This set of complete data is then passed on to the HLT.
 
 \subsubsection*{The HLT}
+At the L1 output rate, the full information from the detector is sent from the experimental cavern at P5 to a computer farm situated above ground for further processing.
+This computer farm is made of a large number of commercial CPUs, running reconstruction software which is implemented into the whole CMS reconstruction software, package 
+described below in section~\ref{sub:cms_reco}, albeit with different sets of parameters optimized for speed~\cite{hltcms}. The HLT starts with L1 information on the candidates for
+physical objects, and improves the reconstruction. The organization is done in so-called HLT paths, which are essentially requirements on physical objects being present in
+a collision. An example which will be used later on in the analysis part of this thesis is \texttt{HLT\_Mu17\_Mu8\_v1}, which requires the presence of one muon with \pt
+greater than 17 \gev and another muon with \pt greater than 8 \gev on HLT level. Other `online' physical objects in the HLT include electrons, jets, missing transverse
+energy, and \ht -- the scalar sum of all jet $p_T$s above a threshold. The reconstruction of objects is divided into modules for any given quantity, followed by a filter on 
+the quantity where a cut is applied, in order to save precious computation time.
 
 
 
