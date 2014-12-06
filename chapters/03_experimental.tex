@@ -245,7 +245,7 @@ the hadronic calorimeter, the superconducting magnet and finally the magnet retu
 The CMS pixel detector is a layered silicon detector with a pixel size of 100 $\times$ 150 $\mu m^2$ with the purpose of measuring the
 trajectory of charged particles very precisely. It is divided into
 a barrel (BPIX) and two endcap `forward' parts (FPIX) symmetrically arranged around the nominal interaction point. The BPIX comprises three
-concentrical layers of 53 cm in length and at radii of \num{4.3}, \num{7.2}, and \num{11} cm from the interaction point, while there are two FPIX 
+concentric layers of 53 cm in length and at radii of \num{4.3}, \num{7.2}, and \num{11} cm from the interaction point, while there are two FPIX 
 disks on either side of the BPIX, at distances of z=$\pm$\num{34.5} and z=$\pm$\num{46.5} cm, extending from a radius of \num{6} to 15 cm.
 In combination, the barrel and endcap part provide high granularity tracking up to a pseudo-rapidity of $\eta$ = 2.5, corresponding to a 
 polar angle of roughly \ang{10}.
@@ -460,6 +460,41 @@ events into one collection. Examples for primary datasets are DoubleMu, DoubleEl
 
 \subsection{Reconstruction and data formats}
 \label{sub:cms_reco}
+Upon passing the HLT at P5, collision data are sent to the CERN Tier-0 computing center located at the CERN main site in Meyrin for full reconstruction at a rate of roughly \SI{1}{\kilo\hertz}. 
+The basic quantity of data in the CMS reconstruction framework -- CMSSW -- is called the `Event', referring to one triggered readout of the full detector. For data analysis it is necessary
+to obtain a data format in which physical objects can be identified, this is called the \textit{Event Data Model}, EDM. CMSSW reconstructs different detector related quantities
+such as calorimeter energy deposits, tracks from the pixel and strip tracker and muons from the muon chambers, with the best available precision and places those objects into the EDM. 
+
+Tracks are reconstructed using an iterative tracking algorithm where in a first iteration tight criteria for track-seeding are used in order to minimize reconstruction of
+fake tracks. In subsequent iterations the set of previously found tracks are used as input, loosening the track fitting requirements to regain tracking efficiency. Five iterations
+are done, leading to efficiencies of about 99.5\% for muons, and well above 90\% for charged hadrons within the tracker volume. Tracks with as little as three hits in the ~10 layer
+tracker can be reconstructed, with a minimal transverse momentum of about 150 \mev, while the fake rate is kept to below one percent~\cite{pfcms}.
+
+Calorimeter clusters are reconstructed by searching for calorimeter cells with an energy deposit above a certain seed-threshold. These are then combined with adjacent cells
+beyond a threshold equivalent to about twice the electronic noise (80-300 \mev in the ECAL and 800 \mev in the HCAL).
+
+Subsequently, these detector-based objects are combined through an algorithm called `Particle Flow' (PF) to identify candidates for physical objects.
+
+\subsubsection*{Particle flow}
+The particle flow algorithm~\cite{pfcms} aims at reconstructing an integral picture of every triggered bunch crossing by combining information from all subdetectors to identify
+PF candidates~\cite{cmspf}. These are photons, electrons, muons, neutral hadrons, and charged hadrons. First, tracks are combined with the information from the muon chambers 
+to search for `global muons' which have both a track, and are reconstructed in the muon system. If a match is found, this PF muon is put into the appropriate collection in the EDM
+and the track is removed from the collection of tracks. The second step involves the matching of tracks and energy clusters in the ECAL, producing a candidate electron. These are then
+refit with a Gaussian Sum Filter (GSF) in order to account for bremsstrahlung on the electrons trajectory. Tracks 
+
+Photons are reconstructed solely with the ECAL energy clusters
+without a track from the tracker pointing towards it. Electrons are combinations of a track from the tracker and an energy cluster in the ECAL, while muons are combined using 
+tracks and hits in the muon chambers. Hadrons are deposits in the HCAL, with a track pointing towards them for charged hadrons, whereas neutral hadrons have no track pointing
+in their direction. From the collections of 
+
+jet clustering
+
+data formats
+
+
+root trees
+
+
 
 
 \subsection{Simulation and Monte-Carlo}
