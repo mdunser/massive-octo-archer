@@ -173,7 +173,7 @@ samples used in the data analysis section of this thesis use \texttt{MadGraph} i
 generator called \texttt{MC@NLO}~\cite{mcatnlo} into a common package called \texttt{MadGraph5\_aMC@NLO}\footnote{Creativity in name-finding was not given highest priority in the development
 of this project.}, which will play a crucial role in future data analyses~\cite{madgraphamcatnlo}. In addition to the ME generators, there is a set of widely used multi-purpose event
 generators that do not specifically calculate the matrix element, but rather use libraries of processes in order to simulate events. Examples for such more phenomenological event simulators
-used at CMS are \texttt{PYTHIA} and \texttt{HERWIG}~\cite{pythia,herwig}. 
+used at CMS are \texttt{PYTHIA} and \texttt{HERWIG}~\cite{pythia6,herwig}. 
 All the aforementioned generators do not only provide simulated events in the form of text-based files with the four-momenta of all the simulated particles, but they also give a
 value for the cross-section of each process, which can then be used as a normalization to the data.
 
@@ -185,9 +185,30 @@ for particles with a short lifetime, such as $W$ and $Z$ bosons, while longer li
 few specific decay simulators in order to preserve proper spin-information in the decay of $\tau$ leptons and heavy resonances, named \texttt{Tauola} and \texttt{MadSpin}, 
 respectively~\cite{tauola,madspin}.
 
-Hadronization of quarks is done by the means of the multi-purpose MC generators mentioned before. Since the hadronization of quarks is an extremely challenging task to describe
-in perturbative QCD (and outright impossible for bound states, for instance).
+Since the hadronization of quarks and gluons into hadronic jets is an extremely challenging task to describe
+in perturbative QCD as it involves a large number of strong interactions
+\footnote{There are processes for which it is outright impossible to use perturbative QCD to describe this, such as bound states of quard-anti-quark pairs.} 
+no attempt is made to calculate these steps one by one. Rather, a phenomenological
+approach is taken in order to describe measured data. This step is therefore performed by the multi-purpose event generators such as \texttt{PYTHIA} and \texttt{HERWIG} by 
+employing underlying simplified models and tuning their parameters to the measured data for maximum data-MC consistency. 
+
+Initial and final state radiation is also added by the multi-purpose event generators. An added complication of the simulation of initial and final state radiation is the matter
+of phase-space matching. For instance, if events are generated at LO+NLO by a ME generator and then passed over to \texttt{PYTHIA} or \texttt{HERWIG} for further processing, the possibility of
+adding a final state radiated gluon in a phase space region that is already covered by the NLO simulation of the event has to be taken into account. For this reason matching algorithms
+have to be employed at this stage.
 
 
-\subsection{Simulation of CMS}
+\subsection{Detector simulation}
 \label{sub:geant}
+Once all these issues with the generation of a set of stable particles are taken care of by the different MC generators, one is left with a large number 
+of particles that interact with the detector and give electronic signals in the many readout channels of CMS. This task is performed by a software package called
+\texttt{GEANT4}~\cite{geant4}. A very detailed software model of the CMS detector is implemented in \texttt{GEANT4} and all particle-detector interactions
+such as ionization, multiple scattering and nuclear interactions are simulated from large libraries. The signal output of all the channels is then generated
+and saved in an EDM format identical to that of actual collision data. This EDM is then treated in the exact same way for reconstruction, clustering and further analysis
+as collision data. The full simulation of all interactions is a very computing intensive task with a computing time of about one minute per event, depending on the number
+of final state particles. For this reason, a faster simulation package has been developed which parametrizes the interactions, leading to much reduced computing time 
+of the order of seconds per event. There are therefore two types of simulated datasets, FULLSIM and FASTSIM~\cite{fastsim}. The difference between the two types of simulation
+have to be taken into account on the analysis level.
+
+\section{Datasets used for analysis}
+\label{sec:datasets}
