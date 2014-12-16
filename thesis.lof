@@ -1,4 +1,16 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Conceptual drawing of all accelerators and experiments hosted at CERN. Besides operating the LHC, there are many other accelerators, decelerators and experiments being operated.\relax }}{6}{figure.caption.20}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Schematic drawing of the LHC ring and its sectors and access points numbered in clockwise direction starting at the ATLAS experiment in point 1.\relax }}{7}{figure.caption.22}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Perspective view of the CMS detector. The cylindrical shape as well as the barrel and endcap geometry can be clearly seen. The depicted people are to scale\nobreakspace {}\cite {cmsdetector}.\relax }}{12}{figure.caption.34}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Sketch of a quarter of all parts in the CMS tracking system with distances in radius $r$ and $z$. The pixel detector is close to the interaction point shown in yellow, the silicon strip tracker is underlaid in pink. Each pink and blue solid line represents an active detector layer\nobreakspace {}\cite {cmstrackeralignment}.\relax }}{13}{figure.caption.37}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Design of the CMS calorimetry system. The homogeneous electromagnetic calorimeter is shown in red towards the center of the detector, while the hadronic calorimeter extends to larger radii\nobreakspace {}\cite {cmsdetector}.\relax }}{15}{figure.caption.41}
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Layout of the CMS muon system. The DTs comprise the barrel part of the detector, while the CSCs are exclusively situated in the endcap part. RPCs are attached to both types of detectors for triggering and timing measurements\nobreakspace {}\cite {muonsystem}.\relax }}{18}{figure.caption.47}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Organizational chart of the various components of any L1-accept. The two systems (calorimetry and muons) work in parallel until they are combined at a regional/global level into the global trigger decision\nobreakspace {}\cite {cmsdetector}.\relax }}{21}{figure.caption.51}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Parton distribution functions of the proton for two different resolution scales $Q^2$. This particular set of parton distribution functions is obtained from the MRST/MSTW collaborations\nobreakspace {}\cite {mstw}.\relax }}{27}{figure.caption.64}
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
 \addvspace {10\p@ }

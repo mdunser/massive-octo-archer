@@ -1,13 +1,219 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{29}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
   \providecommand{\doi}[1]{doi: #1}\else
   \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
 
-\bibitem[Martin(1997)]{susyPrimer}
-Stephen~P. Martin.
-\newblock {A Supersymmetry Primer}.
-\newblock 1997.
+\bibitem[Brüning et~al.(2004)Brüning, Collier, Lebrun, Myers, Ostojic, Poole,
+  and Proudlock]{lhc_designreport}
+Oliver~Sim Brüning, Paul Collier, P~Lebrun, Stephen Myers, Ranko Ostojic, John
+  Poole, and Paul Proudlock.
+\newblock \emph{{LHC Design Report}}.
+\newblock CERN, Geneva, 2004.
+
+\bibitem[collaboration(1983{\natexlab{a}})]{Wdiscovery}
+The~UA1 collaboration.
+\newblock {\textit{Experimental observation of isolated large transverse energy
+  electrons with associated missing energy at s=540 GeV}}.
+\newblock \emph{Physics Letters B}, 122\penalty0 (1):\penalty0 103 -- 116,
+  1983{\natexlab{a}}.
+\newblock ISSN 0370-2693.
+\newblock \doi{http://dx.doi.org/10.1016/0370-2693(83)91177-2}.
+\newblock URL
+  \url{http://www.sciencedirect.com/science/article/pii/0370269383911772}.
+
+\bibitem[collaboration(1983{\natexlab{b}})]{Zdiscovery}
+The~UA1 collaboration.
+\newblock {\textit{Experimental observation of lepton pairs of invariant mass
+  around 95 GeV/c$^2$ at the CERN SPS collider}}.
+\newblock \emph{Physics Letters B}, 126\penalty0 (5):\penalty0 398 -- 410,
+  1983{\natexlab{b}}.
+\newblock ISSN 0370-2693.
+\newblock \doi{http://dx.doi.org/10.1016/0370-2693(83)90188-0}.
+\newblock URL
+  \url{http://www.sciencedirect.com/science/article/pii/0370269383901880}.
+
+\bibitem[Adolphi et~al.(2008)]{cmsdetector}
+R.~Adolphi et~al.
+\newblock {The CMS experiment at the CERN LHC}.
+\newblock \emph{JINST}, 3:\penalty0 S08004, 2008.
+\newblock \doi{10.1088/1748-0221/3/08/S08004}.
+
+\bibitem[Collaboration(2014)]{pileupCMS}
+The~CMS Collaboration.
+\newblock {Public CMS luminosity information}, 2014.
+\newblock URL
+  \url{https://twiki.cern.ch/twiki/bin/view/CMSPublic/LumiPublicResults#Pileup_distribution}.
+
+\bibitem[mag(1997)]{magnettdr}
+\emph{The CMS magnet project: Technical Design Report}.
+\newblock Technical Design Report CMS. CERN, Geneva, 1997.
+
+\bibitem[Adam et~al.(2009)]{cmstrackeralignment}
+W.~Adam et~al.
+\newblock {Alignment of the CMS Silicon Strip Tracker during stand-alone
+  Commissioning}.
+\newblock \emph{JINST}, 4:\penalty0 T07001, 2009.
+\newblock \doi{10.1088/1748-0221/4/07/T07001}.
+
+\bibitem[Kotliński et~al.(2006)Kotliński, Bartz, Erdmann, Gabathuler,
+  Horisberger, Hörmann, Kästli, Meier, and Schnetzer]{bpix}
+D.~Kotliński, E.~Bartz, W.~Erdmann, K.~Gabathuler, R.~Horisberger, Ch.
+  Hörmann, H-Ch. Kästli, B.~Meier, and S.~Schnetzer.
+\newblock {The control and readout systems of the CMS pixel barrel detector}.
+\newblock \emph{Nuclear Instruments and Methods in Physics Research Section A:
+  Accelerators, Spectrometers, Detectors and Associated Equipment},
+  565\penalty0 (1):\penalty0 73 -- 78, 2006.
+\newblock ISSN 0168-9002.
+\newblock \doi{http://dx.doi.org/10.1016/j.nima.2006.04.065}.
+\newblock URL
+  \url{http://www.sciencedirect.com/science/article/pii/S0168900206007200}.
+\newblock {Proceedings of the International Workshop on Semiconductor Pixel
+  Detectors for Particles and Imaging PIXEL 2005 International Workshop on
+  Semiconductor Pixel Detectors for Particles and Imaging}.
+
+\bibitem[Azzurri(2006)]{siliconstrip}
+Paolo Azzurri.
+\newblock {The CMS silicon strip tracker}.
+\newblock \emph{J.Phys.Conf.Ser.}, 41:\penalty0 127--134, 2006.
+\newblock \doi{10.1088/1742-6596/41/1/011}.
+
+\bibitem[Collaboration(2013)]{ecalresolution}
+The~CMS Collaboration.
+\newblock {Energy calibration and resolution of the CMS electromagnetic
+  calorimeter in pp collisions at $\sqrt{s}$ = 7 TeV}.
+\newblock \emph{Journal of Instrumentation}, 8\penalty0 (09):\penalty0 P09009,
+  2013.
+\newblock URL \url{http://stacks.iop.org/1748-0221/8/i=09/a=P09009}.
+
+\bibitem[Kim et~al.(2012)]{muonsystem}
+Min~Suk Kim et~al.
+\newblock {CMS reconstruction improvement for the muon tracking by the RPC
+  chambers}.
+\newblock \emph{PoS}, RPC2012:\penalty0 045, 2012.
+\newblock \doi{10.1088/1748-0221/8/03/T03001}.
+
+\bibitem[Gori(2014)]{hltcms}
+Valentina Gori.
+\newblock {The CMS High Level Trigger}.
+\newblock \emph{Int.J.Mod.Phys.Conf.Ser.}, 31:\penalty0 1460297, 2014.
+\newblock \doi{10.1142/S201019451460297X}.
+
+\bibitem[Trocino(2014)]{hltcms2}
+Daniele Trocino.
+\newblock {The CMS High Level Trigger}.
+\newblock \emph{J.Phys.Conf.Ser.}, 513:\penalty0 012036, 2014.
+\newblock \doi{10.1088/1742-6596/513/1/012036}.
+
+\bibitem[cms(2009)]{cmspf}
+{Particle-Flow Event Reconstruction in CMS and Performance for Jets, Taus, and
+  MET}.
+\newblock Technical Report CMS-PAS-PFT-09-001, CERN, 2009. Geneva, Apr 2009.
+
+\bibitem[Cacciari et~al.(2008)Cacciari, Salam, and Soyez]{antikt}
+Matteo Cacciari, Gavin~P. Salam, and Gregory Soyez.
+\newblock The anti- k t jet clustering algorithm.
+\newblock \emph{Journal of High Energy Physics}, 2008\penalty0 (04):\penalty0
+  063, 2008.
+\newblock URL \url{http://stacks.iop.org/1126-6708/2008/i=04/a=063}.
+
+\bibitem[roo(1997)]{root}
+{ROOT - An Object Oriented Data Analysis Framework}, Sep. 1997.
+\newblock http://root.cern.ch/.
+
+\bibitem[Ball et~al.(2013)Ball, Bertone, Carrazza, Deans, Del~Debbio,
+  et~al.]{nnpdf}
+Richard~D. Ball, Valerio Bertone, Stefano Carrazza, Christopher~S. Deans, Luigi
+  Del~Debbio, et~al.
+\newblock {Parton distributions with LHC data}.
+\newblock \emph{Nucl.Phys.}, B867:\penalty0 244--289, 2013.
+\newblock \doi{10.1016/j.nuclphysb.2012.10.003}.
+
+\bibitem[Owens et~al.(2013)Owens, Accardi, and Melnitchouk]{cteq}
+J.F. Owens, A.~Accardi, and W.~Melnitchouk.
+\newblock {Global parton distributions with nuclear and finite-$Q^2$
+  corrections}.
+\newblock \emph{Phys.Rev.}, D87\penalty0 (9):\penalty0 094012, 2013.
+\newblock \doi{10.1103/PhysRevD.87.094012}.
+
+\bibitem[Martin et~al.(2009)Martin, Stirling, Thorne, and Watt]{mstw}
+A.D. Martin, W.J. Stirling, R.S. Thorne, and G.~Watt.
+\newblock {Parton distributions for the LHC}.
+\newblock \emph{Eur.Phys.J.}, C63:\penalty0 189--285, 2009.
+\newblock \doi{10.1140/epjc/s10052-009-1072-5}.
+
+\bibitem[Frixione and Webber(2002)]{madgraph}
+Stefano Frixione and Bryan~R. Webber.
+\newblock {Matching NLO QCD computations and parton shower simulations}.
+\newblock \emph{JHEP}, 0206:\penalty0 029, 2002.
+\newblock \doi{10.1088/1126-6708/2002/06/029}.
+
+\bibitem[Frixione et~al.(2007)Frixione, Nason, and Oleari]{powheg}
+Stefano Frixione, Paolo Nason, and Carlo Oleari.
+\newblock {Matching NLO QCD computations with Parton Shower simulations: the
+  POWHEG method}.
+\newblock \emph{JHEP}, 0711:\penalty0 070, 2007.
+\newblock \doi{10.1088/1126-6708/2007/11/070}.
+
+\bibitem[Frixione et~al.(2010)Frixione, Stoeckli, Torrielli, Webber, and
+  White]{mcatnlo}
+Stefano Frixione, Fabian Stoeckli, Paolo Torrielli, Bryan~R. Webber, and
+  Chris~D. White.
+\newblock {The MCaNLO 4.0 Event Generator}.
+\newblock 2010.
+
+\bibitem[Alwall et~al.(2014)Alwall, Frederix, Frixione, Hirschi, Maltoni,
+  et~al.]{madgraphamcatnlo}
+J.~Alwall, R.~Frederix, S.~Frixione, V.~Hirschi, F.~Maltoni, et~al.
+\newblock {The automated computation of tree-level and next-to-leading order
+  differential cross sections, and their matching to parton shower
+  simulations}.
+\newblock \emph{JHEP}, 1407:\penalty0 079, 2014.
+\newblock \doi{10.1007/JHEP07(2014)079}.
+
+\bibitem[Sjostrand et~al.(2006)Sjostrand, Mrenna, and Skands]{pythia6}
+Torbjorn Sjostrand, Stephen Mrenna, and Peter~Z. Skands.
+\newblock {PYTHIA 6.4 Physics and Manual}.
+\newblock \emph{JHEP}, 0605:\penalty0 026, 2006.
+\newblock \doi{10.1088/1126-6708/2006/05/026}.
+
+\bibitem[Gieseke et~al.(2004)Gieseke, Ribon, Seymour, Stephens, and
+  Webber]{herwig}
+Stefan Gieseke, Alberto Ribon, Michael~H Seymour, P.~Stephens, and Bryan
+  Webber.
+\newblock {Herwig++ 1.0: An Event generator for e+ e- annihilation}.
+\newblock \emph{JHEP}, 0402:\penalty0 005, 2004.
+\newblock \doi{10.1088/1126-6708/2004/02/005}.
+
+\bibitem[Jadach et~al.(1990)Jadach, Kuhn, and Was]{tauola}
+Stanislaw Jadach, Johann~H. Kuhn, and Zbigniew Was.
+\newblock {TAUOLA: A Library of Monte Carlo programs to simulate decays of
+  polarized tau leptons}.
+\newblock \emph{Comput.Phys.Commun.}, 64:\penalty0 275--299, 1990.
+\newblock \doi{10.1016/0010-4655(91)90038-M}.
+
+\bibitem[Artoisenet et~al.(2013)Artoisenet, Frederix, Mattelaer, and
+  Rietkerk]{madspin}
+Pierre Artoisenet, Rikkert Frederix, Olivier Mattelaer, and Robbert Rietkerk.
+\newblock {Automatic spin-entangled decays of heavy resonances in Monte Carlo
+  simulations}.
+\newblock \emph{JHEP}, 1303:\penalty0 015, 2013.
+\newblock \doi{10.1007/JHEP03(2013)015}.
+
+\bibitem[Agostinelli et~al.(2003)]{geant4}
+S.~Agostinelli et~al.
+\newblock {GEANT4: A Simulation toolkit}.
+\newblock \emph{Nucl.Instrum.Meth.}, A506:\penalty0 250--303, 2003.
+\newblock \doi{10.1016/S0168-9002(03)01368-8}.
+
+\bibitem[Abdullin et~al.(2011)Abdullin, Azzi, Beaudette, Janot, Perrotta, and
+  the CMS~Collaboration]{fastsim}
+S~Abdullin, P~Azzi, F~Beaudette, P~Janot, A~Perrotta, and the
+  CMS~Collaboration.
+\newblock The fast simulation of the cms detector at lhc.
+\newblock \emph{Journal of Physics: Conference Series}, 331\penalty0
+  (3):\penalty0 032049, 2011.
+\newblock URL \url{http://stacks.iop.org/1742-6596/331/i=3/a=032049}.
 
 \end{thebibliography}
