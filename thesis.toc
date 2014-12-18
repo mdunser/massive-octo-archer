@@ -8,44 +8,44 @@
 \contentsline {chapter}{\numberline {2}Theory}{3}{chapter.6}
 \contentsline {section}{\numberline {2.1}The Standard Model}{3}{section.8}
 \contentsline {subsection}{\numberline {2.1.1}Particle content of the Standard Model}{4}{subsection.9}
-\contentsline {subsection}{\numberline {2.1.2}Interactions}{4}{subsection.10}
-\contentsline {subsection}{\numberline {2.1.3}Shortcomings of the Standard Model}{4}{subsection.11}
-\contentsline {section}{\numberline {2.2}Supersymmetry}{4}{section.12}
-\contentsline {subsection}{\numberline {2.2.1}Particle content}{4}{subsection.13}
-\contentsline {subsection}{\numberline {2.2.2}Observables for searches for Supersymmetry}{4}{subsection.14}
-\contentsline {section}{\numberline {2.3}Remaining open questions}{4}{section.15}
-\contentsline {chapter}{\numberline {3}Experimental Setup}{5}{chapter.16}
-\contentsline {section}{\numberline {3.1}The Large Hadron Collider}{5}{section.17}
-\contentsline {subsection}{\numberline {3.1.1}The acceleration chain}{5}{subsection.19}
-\contentsline {subsection}{\numberline {3.1.2}Specifications of the LHC}{7}{subsection.21}
-\contentsline {section}{\numberline {3.2}The CMS experiment}{11}{section.32}
-\contentsline {subsection}{\numberline {3.2.1}General structure and the magnet}{11}{subsection.33}
-\contentsline {subsection}{\numberline {3.2.2}The sub-detectors}{12}{subsection.35}
-\contentsline {chapter}{\numberline {4}Event reconstruction and simulation}{20}{chapter.48}
-\contentsline {section}{\numberline {4.1}The trigger system}{20}{section.49}
-\contentsline {subsection}{\numberline {4.1.1}The L1 trigger}{21}{subsection.50}
-\contentsline {subsection}{\numberline {4.1.2}The HLT}{22}{subsection.52}
-\contentsline {section}{\numberline {4.2}Reconstruction and data formats}{23}{section.53}
-\contentsline {subsection}{\numberline {4.2.1}Particle flow}{23}{subsection.54}
-\contentsline {subsection}{\numberline {4.2.2}Data formats}{25}{subsection.59}
-\contentsline {section}{\numberline {4.3}Simulation and Monte-Carlo}{25}{section.61}
-\contentsline {subsection}{\numberline {4.3.1}Simulation of hard parton scattering}{26}{subsection.62}
-\contentsline {subsection}{\numberline {4.3.2}Decays, hadronization, and radiations}{27}{subsection.67}
-\contentsline {subsection}{\numberline {4.3.3}Detector simulation}{28}{subsection.69}
-\contentsline {section}{\numberline {4.4}Datasets used for analysis}{29}{section.70}
-\contentsline {chapter}{\numberline {5}Same-sign dilepton analyses}{30}{chapter.71}
-\contentsline {section}{\numberline {5.1}Search for Supersymmetry in events with hadronic activity}{30}{section.72}
-\contentsline {section}{\numberline {5.2}Search for electroweak production of Supersymmetry}{30}{section.73}
-\contentsline {section}{\numberline {5.3}Fake leptons}{30}{section.74}
-\contentsline {chapter}{\numberline {6}Outlook}{31}{chapter.75}
-\contentsline {chapter}{\numberline {7}Conclusions}{32}{chapter.76}
+\contentsline {subsection}{\numberline {2.1.2}Interactions}{5}{subsection.13}
+\contentsline {subsection}{\numberline {2.1.3}Shortcomings of the Standard Model}{5}{subsection.14}
+\contentsline {section}{\numberline {2.2}Supersymmetry}{5}{section.15}
+\contentsline {subsection}{\numberline {2.2.1}Particle content}{5}{subsection.16}
+\contentsline {subsection}{\numberline {2.2.2}Observables for searches for Supersymmetry}{5}{subsection.17}
+\contentsline {section}{\numberline {2.3}Remaining open questions}{5}{section.18}
+\contentsline {chapter}{\numberline {3}Experimental Setup}{6}{chapter.19}
+\contentsline {section}{\numberline {3.1}The Large Hadron Collider}{6}{section.20}
+\contentsline {subsection}{\numberline {3.1.1}The acceleration chain}{6}{subsection.22}
+\contentsline {subsection}{\numberline {3.1.2}Specifications of the LHC}{8}{subsection.24}
+\contentsline {section}{\numberline {3.2}The CMS experiment}{12}{section.35}
+\contentsline {subsection}{\numberline {3.2.1}General structure and the magnet}{12}{subsection.36}
+\contentsline {subsection}{\numberline {3.2.2}The sub-detectors}{13}{subsection.38}
+\contentsline {chapter}{\numberline {4}Event reconstruction and simulation}{21}{chapter.51}
+\contentsline {section}{\numberline {4.1}The trigger system}{21}{section.52}
+\contentsline {subsection}{\numberline {4.1.1}The L1 trigger}{22}{subsection.53}
+\contentsline {subsection}{\numberline {4.1.2}The HLT}{23}{subsection.55}
+\contentsline {section}{\numberline {4.2}Reconstruction and data formats}{24}{section.56}
+\contentsline {subsection}{\numberline {4.2.1}Particle flow}{24}{subsection.57}
+\contentsline {subsection}{\numberline {4.2.2}Data formats}{26}{subsection.62}
+\contentsline {section}{\numberline {4.3}Simulation and Monte-Carlo}{26}{section.64}
+\contentsline {subsection}{\numberline {4.3.1}Simulation of hard parton scattering}{27}{subsection.65}
+\contentsline {subsection}{\numberline {4.3.2}Decays, hadronization, and radiations}{28}{subsection.70}
+\contentsline {subsection}{\numberline {4.3.3}Detector simulation}{29}{subsection.72}
+\contentsline {section}{\numberline {4.4}Datasets used for analysis}{30}{section.73}
+\contentsline {chapter}{\numberline {5}Same-sign dilepton analyses}{31}{chapter.74}
+\contentsline {section}{\numberline {5.1}Search for Supersymmetry in events with hadronic activity}{31}{section.75}
+\contentsline {section}{\numberline {5.2}Search for electroweak production of Supersymmetry}{31}{section.76}
+\contentsline {section}{\numberline {5.3}Fake leptons}{31}{section.77}
+\contentsline {chapter}{\numberline {6}Outlook}{32}{chapter.78}
+\contentsline {chapter}{\numberline {7}Conclusions}{33}{chapter.79}
 \vspace {2em}
-\contentsline {chapter}{\numberline {A}Dummy Appendix}{33}{appendix.77}
+\contentsline {chapter}{\numberline {A}Dummy Appendix}{34}{appendix.80}
 \vspace {2em}
-\contentsline {chapter}{Bibliography}{34}{dummy.78}
-\contentsline {chapter}{List of Figures}{34}{dummy.79}
-\contentsline {chapter}{List of Tables}{35}{dummy.81}
-\contentsline {chapter}{Abbreviations}{36}{dummy.83}
-\contentsline {chapter}{Symbols}{37}{dummy.86}
-\contentsline {chapter}{Acknowledgements}{42}{dummy.90}
+\contentsline {chapter}{Bibliography}{35}{dummy.81}
+\contentsline {chapter}{List of Figures}{35}{dummy.82}
+\contentsline {chapter}{List of Tables}{36}{dummy.84}
+\contentsline {chapter}{Abbreviations}{37}{dummy.86}
+\contentsline {chapter}{Symbols}{38}{dummy.89}
+\contentsline {chapter}{Acknowledgements}{43}{dummy.93}
 \vspace {1em}
